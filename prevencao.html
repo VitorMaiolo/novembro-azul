@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Prevenção – Novembro Azul Futurista</title>
+  <title data-i18n="title_prev">Prevenção – Novembro Azul Futurista</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Prevenção</h1>
+  <h1 data-i18n="header_prev">Prevenção</h1>
+
   <nav>
-    <a href="index.html">Início</a>
-    <a href="prevencao.html">Prevenção</a>
-    <a href="contato.html">Contato</a>
+    <a href="index.html" data-i18n="nav_home">Início</a>
+    <a href="prevencao.html" data-i18n="nav_prev">Prevenção</a>
+    <a href="contato.html" data-i18n="nav_contact">Contato</a>
   </nav>
+
+  <div class="lang-mini">
+    <span data-lang="pt" class="active">🇧🇷</span>
+    <span>|</span>
+    <span data-lang="en">🇺🇸</span>
+  </div>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>Exames Fundamentais</h2>
+    <h2 data-i18n="prev_card1_title">Exames Fundamentais</h2>
     <ul>
-      <li>🧬 PSA – Antígeno Prostático Específico</li>
-      <li>🩺 Exame de Toque</li>
-      <li>📅 Check-up anual completo</li>
+      <li data-i18n="prev_exam1">🧬 PSA – Antígeno Prostático Específico</li>
+      <li data-i18n="prev_exam2">🩺 Exame de Toque</li>
+      <li data-i18n="prev_exam3">📅 Check-up anual completo</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>Hábitos que Salvam</h2>
-    <p>
+    <h2 data-i18n="prev_card2_title">Hábitos que Salvam</h2>
+    <p data-i18n="prev_card2_text">
       Alimentação equilibrada, hidratação, redução de álcool e tabagismo, 
       além de exercícios regulares, reduzem drasticamente os riscos.
     </p>
   </div>
 
   <div class="card">
-    <h2>Sintomas de Atenção</h2>
-    <p>
+    <h2 data-i18n="prev_card3_title">Sintomas de Atenção</h2>
+    <p data-i18n="prev_card3_text">
       Se houver dificuldade para urinar, dor óssea, sangue na urina ou 
       necessidade frequente de urinar, procure um especialista.
     </p>
@@ -45,6 +52,9 @@
 
 </div>
 
-<footer>© 2025 – Novembro Azul Futurista</footer>
+<footer data-i18n="footer">© 2025 – Novembro Azul Futurista</footer>
+
+<script src="i18n.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>

@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Contato – Novembro Azul Futurista</title>
+  <title data-i18n="title_contact">Contato – Novembro Azul Futurista</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Contato</h1>
+  <h1 data-i18n="header_contact">Contato</h1>
+
   <nav>
-    <a href="index.html">Início</a>
-    <a href="prevencao.html">Prevenção</a>
-    <a href="contato.html">Contato</a>
+    <a href="index.html" data-i18n="nav_home">Início</a>
+    <a href="prevencao.html" data-i18n="nav_prev">Prevenção</a>
+    <a href="contato.html" data-i18n="nav_contact">Contato</a>
   </nav>
+
+  <div class="lang-mini">
+    <span data-lang="pt" class="active">🇧🇷</span>
+    <span>|</span>
+    <span data-lang="en">🇺🇸</span>
+  </div>
 </header>
 
 <div class="container">
   
   <div class="card">
-    <h2>Fale Conosco</h2>
+    <h2 data-i18n="contact_title">Fale Conosco</h2>
 
     <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
-      <button type="submit">Enviar Mensagem</button>
+      <input type="text" placeholder="Seu nome" data-i18n-placeholder="contact_name" required>
+      <input type="email" placeholder="Seu e-mail" data-i18n-placeholder="contact_email" required>
+      <textarea rows="5" placeholder="Sua mensagem..." data-i18n-placeholder="contact_message" required></textarea>
+      <button type="submit" data-i18n="contact_button">Enviar Mensagem</button>
     </form>
 
   </div>
 
 </div>
 
-<footer>© 2025 – Novembro Azul Futurista</footer>
+<footer data-i18n="footer">© 2025 – Novembro Azul Futurista</footer>
+
+<script src="i18n.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>

@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Novembro Azul – Futuro da Conscientização</title>
+  <title data-i18n="title_index">Novembro Azul – Futuro da Conscientização</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Novembro Azul Futurista</h1>
+  <h1 data-i18n="header_title_index">Novembro Azul Futurista</h1>
+
   <nav>
-    <a href="index.html">Início</a>
-    <a href="prevencao.html">Prevenção</a>
-    <a href="contato.html">Contato</a>
+    <a href="index.html" data-i18n="nav_home">Início</a>
+    <a href="prevencao.html" data-i18n="nav_prev">Prevenção</a>
+    <a href="contato.html" data-i18n="nav_contact">Contato</a>
   </nav>
+
+  <div class="lang-mini">
+    <span data-lang="pt" class="active">🇧🇷</span>
+    <span>|</span>
+    <span data-lang="en">🇺🇸</span>
+  </div>
 </header>
 
-<div class="hero">
+<div class="hero" data-i18n="hero_index">
   Saúde do Homem em uma Nova Era
 </div>
 
 <div class="container">
 
   <div class="card">
-    <h2>Bem-vindo ao Novembro Azul do Futuro</h2>
-    <p>
+    <h2 data-i18n="card1_title_index">Bem-vindo ao Novembro Azul do Futuro</h2>
+    <p data-i18n="card1_text_index">
       Uma experiência visual moderna, imersiva e tecnológica para conscientizar sobre a 
       saúde masculina e a prevenção do câncer de próstata.
       Aqui, informação e inovação caminham juntas.
@@ -32,8 +39,8 @@
   </div>
 
   <div class="card">
-    <h2>Por que inovar?</h2>
-    <p>
+    <h2 data-i18n="card2_title_index">Por que inovar?</h2>
+    <p data-i18n="card2_text_index">
       Em um mundo cada vez mais digital, campanhas de saúde precisam ser atraentes, 
       envolventes e memoráveis. Este site foi criado com foco em impacto visual e 
       navegação intuitiva.
@@ -42,6 +49,9 @@
 
 </div>
 
-<footer>© 2025 – Novembro Azul Futurista</footer>
+<footer data-i18n="footer">© 2025 – Novembro Azul Futurista</footer>
+
+<script src="i18n.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>
