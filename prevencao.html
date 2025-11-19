@@ -52,9 +52,33 @@
 
 </div>
 
+<div id="whatsPopup" class="whats-popup">
+  <div class="whats-content">
+    <span class="close-popup">&times;</span>
+    <h3>Fale com um Especialista</h3>
+    <p>Tem dúvidas sobre prevenção? Converse agora pelo WhatsApp.</p>
+
+    <a href="https://wa.me/5541999999999" target="_blank" class="whats-btn">
+      💬 Enviar Mensagem
+    </a>
+  </div>
+</div>
+
 <footer data-i18n="footer">© 2025 – Novembro Azul Futurista</footer>
 
 <script src="i18n.js"></script>
 <script src="lang.js"></script>
+<script>
+  // Exibe popup após alguns segundos
+  setTimeout(() => {
+    document.getElementById("whatsPopup").style.display = "block";
+  }, 3000); // aparece após 3 segundos
+
+  // Fechar popup
+  document.querySelector(".close-popup").addEventListener("click", () => {
+    document.getElementById("whatsPopup").style.display = "none";
+  });
+</script>
+
 </body>
 </html>

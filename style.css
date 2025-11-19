@@ -187,3 +187,65 @@
   font-weight: bold;
   filter: drop-shadow(0px 0px 2px rgba(255,255,255,0.6));
 }
+
+
+/* ====== WHATSAPP POPUP ====== */
+.whats-popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  display: none;
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  animation: fadeInPopup 0.4s ease forwards;
+}
+
+.whats-content {
+  background: #003366;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.close-popup {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #99CCFF;
+  transition: 0.2s;
+}
+
+.close-popup:hover {
+  color: white;
+}
+
+.whats-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.whats-btn:hover {
+  background: #1EBE58;
+}
+
+@keyframes fadeInPopup {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
